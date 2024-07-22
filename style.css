@@ -68,6 +68,15 @@ body{
     padding-bottom: 1rem;
 }
 
+.para a {
+    color: #718096; /* Set the text color to grey */
+    text-decoration: underline; /* Underline the links */
+}
+
+.para a:hover {
+    color: #94D9EA; /* Optional: Change color on hover for better UX */
+}
+
 .main-title{
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -76,38 +85,35 @@ body{
     padding-top: 3rem;
 }
 
-.contact-info ul{
-    padding-top: 2rem;
-}
-
-.contact-info ul li{
-    padding: .4rem 0;
+.contact-info ul li,
+.linkedin-item,
+.github-item {
+    padding: .4rem 0; /* Consistent padding for all items */
     display: flex;
     align-items: center;
-    color: #718096;
-}
-.contact-info ul li i{
-    padding-right: 1rem;
-    font-size: 1.2rem;
-    color: #2D9CDB;
+    color: #718096; /* Consistent text color */
 }
 
-.linkedin-item {
-    padding: .4rem 0;
-    display: flex;
-    align-items: center;
-    color: #718096; /* Matches the text color */
+.contact-info ul li a,
+.linkedin-item a,
+.github-item a {
+    color: #718096; /* Consistent text color for links */
+    text-decoration: underline; /* Underline links */
 }
 
-.linkedin-item a {
-    color: #718096; /* Matches the text color */
-    text-decoration: underline; /* Removes underline from the link */
+.contact-info ul li a:hover,
+.linkedin-item a:hover,
+.github-item a:hover,
+.instagram-item a:hover {
+    color: #94D9EA; /* Change color on hover */
 }
 
-.linkedin-item i {
-    padding-right: 1rem; /* Matches spacing */
-    font-size: 1.2rem; /* Matches icon size */
-    color: #2D9CDB; /* Matches the icon color */
+.contact-info ul li i,
+.linkedin-item i,
+.github-item i {
+    padding-right: 1rem; /* Consistent spacing */
+    font-size: 1.2rem; /* Consistent icon size */
+    color: #2D9CDB; /* Consistent icon color */
 }
 
 .skills-section ul{
@@ -133,23 +139,21 @@ body{
     background-color: #2D9CDB;
     border-radius: 12px;
 }
-.js-progress{
-    width: 70%;
+
+.j-progress {
+    width: 100%; /* Quick Learner, Communication, Problem Solving, Teamwork, Adaptability */
 }
-.ps-progress{
-    width: 90%;
+.j-progress-java {
+    width: 70%; /* Java */
 }
-.j-progress{
-    width: 85%;
+.n-progress {
+    width: 80%; /* MS Office, C# */
 }
-.c-progress{
-    width: 40%;
+.c-progress {
+    width: 65%; /* C++ */
 }
-.n-progress{
-    width: 63%;
-}
-.w-progress{
-    width: 78%;
+.ps-progress {
+    width: 60%; /* Python, HTML/CSS */
 }
 
 
