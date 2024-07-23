@@ -26,27 +26,25 @@ body{
 }
 
 .header-bar {
-    position: absolute;
-    left: 0;
-    bottom: -1rem; /* Adjust the position relative to the profile section */
-    width: 100%; /* Span the full width of the left section */
-    height: 0.2rem; /* Height of the thin rectangle */
-    background-color: #2D9CDB; /* Color of the rectangle */
-    border-radius: 0.1rem; /* Slight rounding of the corners */
+    position: relative;
+    height: 0.5rem; /* Increased height for a thicker bar */
+    margin-top: 1rem; /* Margin to push it away from the content */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)); /* Gradient for shiny effect with fade */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Added box-shadow for extra shine */
+    border-radius: 0; /* No border-radius for sharp edges */
 }
-
 
 .left-section{
     grid-column: span 2;
     height: 100%;
-    background-color: #00324A;
+    background-color: #001f3f;
 }
+
 .right-section{
     grid-column: span 5;
     background-color: #f7f7f7;
     height: 100%;
 }
-
 
 .left-content{
     padding: 2rem 3rem;
