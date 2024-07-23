@@ -111,12 +111,18 @@ body{
     color: #94D9EA; /* Optional: Change color on hover for better UX */
 }
 
-.main-title{
+.main-title {
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #f7f7f7ec;
     padding-top: 3rem;
+    display: inline-block; /* Ensure the element's width can change */
+    transition: transform 0.3s ease; /* Smooth transition for stretching effect */
+}
+
+.main-title:hover {
+    transform: scaleX(1.1); /* Stretches the title horizontally */
 }
 
 .contact-info ul li,
@@ -292,12 +298,31 @@ body{
     grid-template-columns: repeat(2, 1fr);
 }
 
-.tl-title{
-    letter-spacing: 1px;
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.tl-title {
     font-size: 1.3rem;
+    letter-spacing: 1px;
     color: #002333;
     text-transform: uppercase;
+    animation: bounceIn 1s ease-out; /* Apply the bouncing animation */
 }
+
 .tl-title-2{
     letter-spacing: 1px;
     font-size: 1.3rem;
