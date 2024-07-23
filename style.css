@@ -281,10 +281,15 @@ body{
     transform: translateY(-50%);
 }
 
-.para{
+.para {
     line-height: 1.6rem;
     color: #718096;
     font-size: 1.1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.para:hover {
+    transform: scale(1.05);
 }
 
 .sect{
