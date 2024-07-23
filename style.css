@@ -19,6 +19,23 @@ body{
     grid-template-columns: repeat(7, 1fr);
 }
 
+.profile {
+    position: relative; /* Ensure that the header bar can be positioned absolutely */
+    width: 100%;
+    border-bottom: 1px solid #002333;
+}
+
+.header-bar {
+    position: absolute;
+    left: 0;
+    bottom: -1rem; /* Adjust the position relative to the profile section */
+    width: 100%; /* Span the full width of the left section */
+    height: 0.2rem; /* Height of the thin rectangle */
+    background-color: #2D9CDB; /* Color of the rectangle */
+    border-radius: 0.1rem; /* Slight rounding of the corners */
+}
+
+
 .left-section{
     grid-column: span 2;
     height: 100%;
@@ -68,6 +85,23 @@ body{
     padding-bottom: 1rem;
 }
 
+/* Name and title hover effects */
+.name,
+.career {
+    animation: neonGlow 2s infinite alternate; /* Continuous pulsating animation */
+}
+
+/* Neon glow animation */
+@keyframes neonGlow {
+    from {
+        text-shadow: 0 0 0px #94D9EA;
+    }
+    to {
+        text-shadow: 0 0 5px #94D9EA, 0 0 10px #94D9EA, 0 0 15px #94D9EA, 0 0 20px #94D9EA;
+    }
+}
+
+
 .para a {
     color: #718096; /* Set the text color to grey */
     text-decoration: underline; /* Underline the links */
@@ -114,28 +148,48 @@ body{
     padding-right: 1rem; /* Consistent spacing */
     font-size: 1.2rem; /* Consistent icon size */
     color: #2D9CDB; /* Consistent icon color */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
-.skills-section ul{
+.contact-info ul li i:hover,
+.linkedin-item i:hover,
+.github-item i:hover {
+    transform: scale(1.2); /* Grow the icon on hover */
+}
+
+
+.skills-section ul {
     padding-top: 2rem;
 }
-.skills-section ul li{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: .4rem 0;
+
+.skills-section ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0;
+    margin-bottom: 1rem;
 }
 
-.progress-bar{
-    width: 100%;
-    height: .4rem;
-    background-color: #2f81ed5b;
-    position: relative;
-    border-radius: 12px;
+.skill-title {
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
-.progress{
+
+.progress-bar-container {
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.4rem;
+    background-color: #2f81ed5b;
+    border-radius: 12px;
+    position: relative;
+}
+
+.progress {
     height: 100%;
-    position: absolute;
-    left: 0;
     background-color: #2D9CDB;
     border-radius: 12px;
 }
@@ -143,24 +197,21 @@ body{
 .j-progress {
     width: 100%; /* Quick Learner, Communication, Problem Solving, Teamwork, Adaptability */
 }
+
 .j-progress-java {
     width: 70%; /* Java */
 }
+
 .n-progress {
     width: 80%; /* MS Office, C# */
 }
+
 .c-progress {
     width: 65%; /* C++ */
 }
+
 .ps-progress {
     width: 60%; /* Python, HTML/CSS */
-}
-
-
-.skill-title{
-    text-transform: uppercase;
-    color: #f7f7f7;
-    font-size: 1rem;
 }
 
 .sub-title{
