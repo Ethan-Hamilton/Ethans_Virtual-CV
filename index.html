@@ -73,8 +73,11 @@ body{
 .profile img{
     width: 100%;
     border-radius: 50%;
-    border: 8px solid #002333;
-    
+    border: 8px solid #91abca;
+}
+.profile img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .name{
@@ -242,14 +245,27 @@ body{
     padding: .4rem 0;
 }
 
-.references-section li{
+.references-section li {
     color: #ccc;
     padding: .2rem 0;
 }
-.references-section li i{
+
+.references-section li i {
     padding-right: .5rem;
     font-size: 1.2rem;
     color: #2D9CDB;
+}
+
+/* New styles for the email link */
+.references-section li a {
+    color: white; /* Sets the email link color to white */
+    text-decoration: none; /* Removes the underline */
+}
+
+/* Optionally, add a hover effect to change the color or add underline on hover */
+.references-section li a:hover {
+    color: #ccc; /* Changes the color to a light grey on hover */
+    text-decoration: underline; /* Adds underline on hover */
 }
 
 /* Interests Section */
@@ -413,7 +429,7 @@ body{
             <div class="left-content">
                 <div class="profile">
                     <div class="image">
-                        <img src="/avatar.jpg" alt="">
+                        <img src="EthanEdit3_CV.jpg" alt="Profile Picture">
                     </div>
                     <h2 class="name">Ethan Hamilton</h2>
                     <p class="career">Future Software Developer</p>
@@ -533,9 +549,16 @@ body{
                                 <i class="fa fa-phone"></i>
                                 (+27) 73 220 6816
                             </li>
+                        </ul>
+                        <h6 class="sub-title">Shannyn Hamilton</h6>
+                        <p class="sub-para">Business Owner</p>
+                        <ul>
                             <li>
-                                <i class="fa fa-envelope"></i>
-                                xxxxxxx@gmail.com
+                                <i class="fa fa-phone"></i>
+                                (+27) 83 667 7022
+                            </li>
+                            <li>
+                                <a href="mailto:shannyn.sh@gmail.com">shannyn.sh@gmail.com</a>
                             </li>
                         </ul>
                     </div>
@@ -545,7 +568,8 @@ body{
                     <ul>
                         <li>Tech Enthusiast</li>
                         <li>Health & Fitness (Gym)</li>
-                        <li>Outdoor Activities & Adventures</li>
+                        <li>Outdoor Adventures</li>
+                        <li>Gaming</li>
                         <li>Guitar</li>
                         <li>Golf</li>
                         <li>Chess</li>
