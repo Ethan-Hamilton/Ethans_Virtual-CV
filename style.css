@@ -161,7 +161,6 @@ body{
     transform: scale(1.2); /* Grow the icon on hover */
 }
 
-
 .skills-section ul {
     padding-top: 2rem;
 }
@@ -230,14 +229,26 @@ body{
     padding: .4rem 0;
 }
 
-.references-section li{
+.references-section li {
     color: #ccc;
     padding: .2rem 0;
 }
-.references-section li i{
+
+.references-section li i {
     padding-right: .5rem;
     font-size: 1.2rem;
     color: #2D9CDB;
+}
+
+.references-section .custom-link {
+    color: #ccc; /* Use the same color as your list items */
+    text-decoration: none; /* Remove underline */
+}
+
+.references-section .custom-link:hover,
+.references-section .custom-link:focus {
+    color: #ccc; /* Ensure hover and focus states use the same color */
+    text-decoration: underline; /* Optionally, add underline on hover/focus */
 }
 
 /* Interests Section */
