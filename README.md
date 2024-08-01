@@ -12,6 +12,15 @@ The CV is built using HTML and CSS, ensuring a structured and styled presentatio
 ## Compatibility
 The design and structure of my CV are tested for compatibility across various web browsers and devices. Ensuring a consistent and accessible experience for all users was a priority, making the CV viewable on desktops, tablets, and smartphones.
 
+## Specifications
+My CV includes the following:
+- **Academic Achievements:** Highlighting my educational background and accomplishments.
+- **Relevant Work Experience:** Detailing my professional experience and the roles I have undertaken.
+- **Skills:** Showcasing my technical and soft skills pertinent to my career.
+- **Certifications:** Listing certifications that validate my expertise and knowledge.
+
+I ensured that my CV adheres to industry standards and is tailored to reflect my individual strengths and career aspirations.
+
 ---
 
 You can view my CV [here](https://ethan-hamilton.github.io/Ethans_Virtual-CV/). It is also accessible through my portfolio website and serves as a button to navigate to the CV. Your feedback and suggestions are welcome!
